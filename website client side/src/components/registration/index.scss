@@ -1,0 +1,126 @@
+.registration{
+    display: flex;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 100vh;
+    width: 100%;
+
+    .form-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0px;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(orange 1%,crimson 99%);
+        border-radius: 20px;
+        
+        h2{
+            text-align: center;
+            color: white;
+        }
+
+        .form-ul one{
+            .inputbox{
+                width: 300px;
+            }
+        }
+
+        ul{
+            
+            li{
+                list-style: none;
+                // width: 100%;
+                border-bottom: 2px solid #fff;
+                height: 30px;
+                border-radius: 40px;
+                margin: 0px 4px;
+            }
+        }
+
+        .form-ul-one{
+
+            .inputbox{
+                padding: 8px;
+                border: 0px;
+                border-radius: 20px;
+                width: 96%;
+            }
+        }
+
+        .form-ul{
+            display: flex;
+
+            .inputbox-city{
+                padding: 8px;
+                border: 0px;
+                border-radius: 20px;
+                width: 145%;
+            }
+
+            .inputbox{
+                padding: 8px;
+                border: 0px;
+                border-radius: 20px;
+            }
+
+            select{
+                padding: 8px;
+                border: 0px;
+                border-radius: 20px;
+            }
+        }
+
+        .submit-btn{
+            padding: 8px;
+            border: 0px;
+            border-radius: 20px;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+
+        .form-text{
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .registration{
+    
+        .form-container{
+            width: 75vh;
+            height: 70vh;
+            h2{
+
+            }
+    
+            ul{
+                li{
+
+                }
+            }
+    
+            .form-ul{
+    
+                .inputbox{
+
+                }
+    
+                select{
+
+                }
+            }
+    
+            .submit-btn{
+    
+            }
+    
+            .form-text{
+
+            }
+        }
+    }
+}
