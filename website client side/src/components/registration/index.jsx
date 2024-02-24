@@ -5,7 +5,7 @@ import {useNavigate} from 'react-router-dom'
 
 const Registraion = () => {
 
-    const baseURL='/school/register'
+    const baseURL='api/api/v1/auth/school'
     
     const [user,setUser] = useState({
         firstName:"",
@@ -34,7 +34,7 @@ const Registraion = () => {
             role:"USER"
         }
         
-        await axios.post(baseURL,data,
+        await axios.post(`${baseURL}/register`,data,
         {
             headers: { 'Content-Type': 'application/json' },
             withCredentials: true
@@ -46,7 +46,7 @@ const Registraion = () => {
             } 
         }).catch(function (error){
             console.log(error); 
-            setErr('Credentials Wrong!Please Try Again'); 
+            setErr('Somethings Wrong!Please Try Again'); 
         })
     }
 
@@ -105,7 +105,7 @@ const Registraion = () => {
                 <ul className='form-ul-one'>
                     <li><input
                     className='inputbox' 
-                    type='text' 
+                    type='email' 
                     name='email' 
                     placeholder='email' 
                     value={user.email} 

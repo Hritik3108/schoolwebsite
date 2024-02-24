@@ -1,15 +1,22 @@
 
+.wrapper-container{
+    display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height */
+}
 
 .wrapper{
+
     width: 420px;
     background:slateblue;
     border: 2px solid rgba(255,255,255, .2);
     box-shadow: 0 0 10 rgba(0,0,0, .2);
     color: #fff;
     border-radius: 10px;
-    padding: 500px 600px;
-    justify-content: center;
-    align-content: center;
+    padding: 10px 20px;
+    /* justify-content: center; */
+    /* align-content: center; */
    
 }
 .wrapper h1{
