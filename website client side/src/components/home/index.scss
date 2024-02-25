@@ -1,0 +1,80 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+.tabs-container{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+
+      // buttons
+      .tab-buttons{
+        display: flex;
+      }
+
+      .tab-buttons button {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: #f2f2f2;
+        cursor: pointer;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      .tab-buttons button:hover {
+        background-color: #ddd;
+      }
+
+      .tab-buttons button.active {
+        color: white;
+        background-color: black;
+      }
+
+
+  //  contents   
+  .tab-content{
+    .tab-1-div{
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      height: 80vh;
+    }
+
+    .tab-2-div{
+      background-color: greenyellow;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      height: 80vh;
+    }
+
+    .tab-3-div{
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      height: 80vh;
+    }
+
+    .tab-4-div{
+      background-color: orange;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      height: 80vh;
+      select{
+        width: 200px;
+        height: 40px;
+        margin-top: 20px;
+        
+      }
+    }
+  }
+}

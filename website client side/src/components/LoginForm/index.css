@@ -1,14 +1,16 @@
 
 .wrapper-container{
     display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-  height: 100vh; /* Full viewport height */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+    background-image: url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    width: 100%;
 }
 
 .wrapper{
 
-    width: 420px;
+    width: 520px;
     background:slateblue;
     border: 2px solid rgba(255,255,255, .2);
     box-shadow: 0 0 10 rgba(0,0,0, .2);

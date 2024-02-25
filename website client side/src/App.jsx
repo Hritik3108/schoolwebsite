@@ -11,6 +11,7 @@ function App() {
     <>
       <div>
       <Routes>
+      <Route index element={<Registraion />} />
         <Route path="/registration" element={<Registraion />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path='/changePassword' element={<ChangePassword />} />
