@@ -1,15 +1,84 @@
 import './index.scss'
+import {  useRef, useState } from 'react';
+import axios from 'axios';
+import {useNavigate} from 'react-router-dom'
 
 const ChangePassword = () => {
-    return (
-        <>
-        <h2>Welcome to ChangePassword page</h2>
+    const baseURL='api/api/v1/auth/school'
 
-        {/* todo 1.make a form same as login page requirements are email, old Password, new Password styling will be same as login page */}
-        {/* todo 2.add the functions and react hooks same as login page */}
-        {/* todo 3.functions to add handleChange handleSubmit async function change password */}
-        {/* If needed change the stylesheet format to css from scss by changing the extension to .css*/}
-        </>
+    const [user,setUser] = useState({
+        email:"",
+        oldPassword:"",
+        newPassword:""
+    })
+
+    const[msg,setMsg]=useState(" ");
+
+    const navigate = useNavigate();
+
+    async function change(event){
+        const data={
+            email:user.email,
+            oldPassword:user.oldPassword,
+            newPassword:user.newPassword
+        }
+        
+        await axios.post(`${baseURL}/forgottenPassword`,data,
+        {
+            headers: { 'Content-Type': 'application/json' },
+            withCredentials: true
+        }).then((response) => {
+            if(response.status===200){
+                setMsg("Password Changed")
+            } 
+        }).catch(function (error){
+            console.log(error);  
+            setMsg("Something Went Wrong!!")
+        })
+    }
+
+    function handleSubmit(e){
+        e.preventDefault()
+        change()
+    }
+
+    function handleChange(event){
+        const {name,value} = event.target
+        setUser(prev => ({
+            ...prev,
+            [name]:value
+        }))
+    }
+
+    const refForm=useRef()
+
+    return(
+        <div className="wrapper-container">
+        <div className='wrapper'>
+        <form ref={refForm} onSubmit={handleSubmit}>
+            <h1>Change Password</h1>
+            <div className="input-box">
+                <center><input type="email" name="email" placeholder='Username' value={user.email} onChange={handleChange}  required/></center>
+            
+            </div>
+            <div className="input-box">
+            <center><input type="Password" placeholder='Old Password' name="oldPassword" value={user.oldPassword} onChange={handleChange} required/></center>
+            </div>
+
+            <div className="input-box">
+            <center><input type="Password" placeholder='New Password' name="newPassword" value={user.newPassword} onChange={handleChange} required/></center>
+            </div>
+
+            <button type="submit">Change Password</button>
+            <div className="register-link">
+                <center><p>Don't have an account?<a href="/registration">Register</a></p></center>
+            </div>
+            <div>
+                <center><p>{msg}</p></center>
+            </div>
+        </form>
+        </div>
+        </div>
     );
 }
 
