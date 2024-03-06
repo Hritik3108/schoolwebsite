@@ -29,6 +29,7 @@ const LoginForm=()=>{
         }).then((response) => {
             if(response.status===200){
                 localStorage.setItem('FRtoken',response.data.access_token)
+                localStorage.setItem('email',data.email)
                 navigate('/home')
             } 
         }).catch(function (error){

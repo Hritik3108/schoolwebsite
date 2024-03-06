@@ -4,12 +4,14 @@ import LoginForm from '../src/components/LoginForm';
 import {Route,Routes} from 'react-router-dom' 
 import ChangePassword from './components/changePassword';
 import Home from './components/home';
+import NavBar from './components/sidebar';
 
 function App() {
   
   return (
     <>
       <div>
+      <NavBar />
       <Routes>
       <Route index element={<Registraion />} />
         <Route path="/registration" element={<Registraion />} />
@@ -18,6 +20,7 @@ function App() {
         <Route path='/home' element={<Home />} />
       </Routes>
       
+
       </div>
       
     </>

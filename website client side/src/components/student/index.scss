@@ -1,0 +1,37 @@
+.student-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+    .profile-info-container{
+        display: flex;
+        background-color: white;
+        margin-top: 10%;
+        border-radius: 20px;
+        padding: 3%;
+        box-shadow: 5px 5px black;
+
+        .profile-info-innerContainer{
+
+        }
+
+        .student-info-img{
+            width: 200px;
+            mix-blend-mode:darken;
+            margin-left: 15%;
+        }
+
+    }
+
+    .assignment-container{
+        .assignment-cardList{
+            display: flex;
+        }
+
+    }
+
+    .test-series-container{
+
+    }
+}

@@ -1,0 +1,127 @@
+* {box-sizing: border-box}
+
+.menu-container{
+    position: fixed;
+    border: 1px black solid;
+    width: 50px;
+    height: 100%;
+    // display: flex;
+    color: white;
+    background-color: #333333;
+    // line-height: 0px;    
+
+    .menu-trigger{
+
+        .bars-icon{
+            height: 30px;
+            position: sticky;
+            padding: 0.5%;
+            // width: 40px;
+            margin-left: 25%;
+            margin-top: 30%;
+            z-index: 5;
+        }
+
+
+        .loggin-link{
+
+        }
+    }
+
+
+    .sidebar-menu.active{
+        position: fixed;
+        background-color: #333333;
+        padding: 0 40px;
+        top:0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transition: var(--speed) ease;
+    }
+
+    .sidebar-menu.inactive{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: var(--speed) ease;
+    }
+
+    .sidebar-menu{
+        position: sticky;
+
+        ul{
+            list-style: none;
+
+            li{    
+                padding: 15px;
+                border-bottom: white solid;
+                border-radius: 2px;
+                width: 200px;
+                height: 53px;
+
+                
+
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+
+            li:hover{
+                background-color: #ddd;
+                color: black;
+                cursor: pointer;
+                border-top: white solid;
+                border-radius: 2px;
+            }
+            
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .menu-container{
+        .menu-trigger{
+            .bars-icon{
+                display: none;
+            }
+            .loggin-link{
+            }
+        }
+    
+        .sidebar-menu.active, .sidebar-menu.inactive{
+            align-items: center;
+            opacity: 1;
+            width: 41vh;
+            height: 100%;
+
+            position: fixed;
+            background-color: #333333;
+            padding: 10px 10px;
+            top:0px;
+            left: 0px;
+            z-index: 4;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transition: var(--speed) ease;
+        }
+    
+        .sidebar-menu{
+            ul{
+            
+                li{    
+                }
+    
+                li:hover{
+                }
+                
+            }
+        }
+    }
+}

@@ -11,6 +11,7 @@ body, html {
   border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
+  margin-left: 50px;
 
       // buttons
       .tab-buttons{
@@ -44,15 +45,16 @@ body, html {
       display: flex;
       justify-content: center;
       // align-items: center;
-      height: 80vh;
+      height: 90vh;
     }
 
     .tab-2-div{
-      background-color: greenyellow;
+      background-image: url("https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg");
+      background-size: 100% 100%;
       display: flex;
       justify-content: center;
       // align-items: center;
-      height: 80vh;
+      height: 90vh;
     }
 
     .tab-3-div{
@@ -60,21 +62,59 @@ body, html {
       display: flex;
       justify-content: center;
       // align-items: center;
-      height: 80vh;
+      height: 90vh;
     }
 
     .tab-4-div{
-      background-color: orange;
+      background-image: url("https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      background-size: 100% 100%;
       display: flex;
-      justify-content: center;
+      // justify-content: center;
       // align-items: center;
-      height: 80vh;
-      select{
-        width: 200px;
-        height: 40px;
-        margin-top: 20px;
+      height: 90vh;
+      width: 100%;
+      // select{
+      //   width: 200px;
+      //   height: 40px;
+      //   margin-top: 20px;
         
-      }
+      // }
     }
   }
+}
+
+
+@media screen and (min-width: 600px) {
+  .tabs-container{
+    margin-left: 41vh;
+  
+        // buttons
+        .tab-buttons{
+        }
+  
+        .tab-buttons button {
+        }
+  
+        .tab-buttons button:hover {
+        }
+  
+        .tab-buttons button.active {
+        }
+  
+  
+    //  contents   
+    .tab-content{
+      .tab-1-div{
+      }
+  
+      .tab-2-div{
+      }
+  
+      .tab-3-div{
+      }
+  
+      .tab-4-div{
+      }
+    }
+  }    
 }
