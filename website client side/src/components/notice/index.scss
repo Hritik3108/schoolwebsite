@@ -1,0 +1,34 @@
+.noticeboard-container{
+    background-color: azure;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    border: none;
+    padding: 2px;
+    width: 350px;
+    margin: 5px;
+    height: 60vh;
+    ul{
+        margin: 0;
+        padding: 2%;
+        .noticeboard-heading{
+            background-color: pink;
+            color: white;
+            font-weight: 800;
+            padding: 2px;
+            text-align: center;
+            font-size: larger;
+            color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: 5px 5px gray;
+            border: none;
+        }
+
+        li{
+            list-style: none;
+            border-bottom: 1px solid plum;
+            font-family: rush Script MT, Brush Script Std, cursive;
+            font-size: larger;
+        }
+    
+    }    
+}

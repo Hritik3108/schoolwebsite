@@ -26,17 +26,10 @@ const NavBar = () => {
                 <ul>
                 <li><a href="/login">Login</a></li>
                 <li><a href="/registration">Register</a></li>
-                <li><a href="/home">Home</a></li>
+                <li className='home-li'><a href="/home">Home</a></li>
                 <li>Students Record</li>
                 <li>
                     Test Series
-                    {/* <div className={`sidebar-2-menu ${open? 'active':'inactive'}`}> */}
-                    {/* <ul className='ul-ul'>    
-                        <li className='ul-ul-li'>Maths</li>
-                        <li className='ul-ul-li'>English</li>
-                        <li className='ul-ul-li'>Science</li>
-                    </ul> */}
-                    {/* </div> */}
                 </li>
                 <li>Answer Sheet</li>
                 <li>Query</li>

@@ -1,0 +1,55 @@
+.tasklist-container{
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    border: none;
+    background-color: azure;
+    padding: 2%;
+    width: 350px;
+    margin-top: 5px;
+    
+    ul{
+        padding: 0;
+        // overflow: hidden;
+
+
+        h4{
+            padding: 2px;
+            text-align: center;
+            font-size: larger;
+            color: whitesmoke;
+            background-color: pink;
+            border-radius: 5px;
+            box-shadow: 5px 5px gray;
+            border: none;
+        }
+
+        li{
+            padding: 2px;
+            list-style: none;
+            border-bottom: 1px solid plum;
+            margin: 4px;
+            font-size: larger;
+            font-family: rush Script MT, Brush Script Std, cursive;
+            // max-width: 300px;
+            // margin-right: 8%;
+            button{
+                margin-right: 8px;
+                margin-bottom: 2px;
+                padding: 2px;
+                font-size: large;
+                color: white;
+                border: none;
+                border-radius: 2px;
+                box-shadow: 1px 1px gray;
+            }
+
+            .btn-pending{
+                background-color: orangered;
+            }
+
+            .btn-complete{
+                background-color: greenyellow;
+            }
+        }
+    }
+}

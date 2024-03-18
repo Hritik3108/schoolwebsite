@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState} from 'react';
 import './index.scss';
 // import NavBar from '../sidebar';
 import UserData from '../userData';
@@ -19,42 +19,7 @@ const Home = () => {
     }))
 }
 
-  const[staffData,setStaffData]=useState({
-    // id:"",
-    name:"",
-    email:"",
-    contact:""
-  })
 
-  const baseURL='api/api/v1/auth/school'
-
-  async function callStaffData(e){
-    e.preventDefault()
-    console.log("staff data requested")
-    const data={
-      email:localStorage.getItem('email')
-    }
-    await axios.post(`${baseURL}staff`,data,
-    {
-        headers: { 
-            'Content-Type': 'application/json', 
-            'Authorization': "Bearer "+localStorage.getItem('FRtoken')
-        },
-        withCredentials: true
-    }).then((response) => {
-        if(response.status===200){
-          console.log(response.data)
-          setStaffData(response.data)
-        }
-    }).catch(function (error){
-        console.log("error")
-    })
-  }
-
-  useEffect(()=>{
-    console.log("useeffect")
-    callStaffData()    
-  },[])
 
   return (
     <div className="tabs-container">

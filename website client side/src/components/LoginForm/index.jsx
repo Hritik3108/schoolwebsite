@@ -28,8 +28,8 @@ const LoginForm=()=>{
             withCredentials: true
         }).then((response) => {
             if(response.status===200){
-                localStorage.setItem('FRtoken',response.data.access_token)
-                localStorage.setItem('email',data.email)
+                localStorage.setItem('token',response.data.access_token)
+                localStorage.setItem('username',response.data.user)
                 navigate('/home')
             } 
         }).catch(function (error){

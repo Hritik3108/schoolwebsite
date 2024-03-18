@@ -10,7 +10,7 @@ const UserData = (props) => {
             <div className='profile-pic-container'>
             <img src={"https://wallpapers.com/images/featured/cool-profile-pictures-4co57dtwk64fb7lv.jpg"} alt='profile-pic' className='profile-img' />
             </div>
-            <table>
+            {/* <table>
                 <tr>
                     <td>Full Name</td>
                     <td>Abinash Patra</td>
@@ -36,10 +36,10 @@ const UserData = (props) => {
                     </td>
                 </tr>
 
-            </table>
+            </table> */}
             </div>
 
-            <div className='attendence-container'>
+            {/* <div className='attendence-container'>
                 <h4>Attendence Record</h4>
                 <table>
                     <tr>
@@ -64,12 +64,12 @@ const UserData = (props) => {
                     </tr>
                     
                 </table>
-            </div>
+            </div> */}
 
 
             <div className='test-series-container'>
                 <h4>Test Series</h4>
-                <table>
+                {/* <table>
                     <tr>
                         <th>Subject</th>
                         <th>Maths</th>
@@ -98,7 +98,7 @@ const UserData = (props) => {
                             <td><a href="#" className='upload-test-btn'>Upload</a></td>
                         </td>
                     </tr>
-                </table>
+                </table> */}
             </div>
 
         </div>

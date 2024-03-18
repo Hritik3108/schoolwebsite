@@ -41,6 +41,7 @@ const Registraion = () => {
         }).then((response) => {
             if(response.status===200){
                 localStorage.setItem('FRtoken',response.data.access_token)
+                localStorage.setItem('username',response.data.user)
                 setErr("")
                 navigate('/login')
             } 
@@ -51,6 +52,11 @@ const Registraion = () => {
     }
 
     function handleSubmit(e){
+        if(user.password.length<8){
+            e.preventDefault()
+            setErr("Password is too short")
+        }
+
         if(user.password!==user.confirmPassword){
             e.preventDefault()
             setErr("passwords doesn't matches")

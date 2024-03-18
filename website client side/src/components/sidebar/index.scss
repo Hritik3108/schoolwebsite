@@ -57,13 +57,19 @@
         ul{
             list-style: none;
 
+            .home-li{
+                // background-color: yellow;
+                // color: #333333;
+            }
+
             li{    
                 padding: 15px;
                 border-bottom: white solid;
                 border-radius: 2px;
                 width: 200px;
                 height: 53px;
-
+                margin-top: 5px;
+                background-color: #333333;
                 
 
                 a{
