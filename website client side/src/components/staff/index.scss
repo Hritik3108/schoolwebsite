@@ -1,0 +1,93 @@
+.staff-container{
+    .screen-title{
+        color: #222831;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .staff-inner-container{
+        .init-row{
+            .init-col{
+                .profile-card{
+                    margin: 5px;
+                    color: #EEEEEE;
+                    background-color: #76ABAE;
+                    box-shadow: 5px 5px #31363F;
+                    .staff-data-card{
+                        
+                    }
+                    .img-container{
+                        // border: 3px solid #222831;
+                        // border-radius: 100px;
+                        // width: 20px; 
+                        // height: 220px;
+                        display: flex;
+                        justify-content: center;
+                        .profile-pic{
+                            width: 200px;
+                            height: 220px;
+                            margin-top: 10px;
+                            border-radius: 100px;
+
+                        }
+                    }
+                }
+                .test-series-heading{
+                    background-color: #31543F;
+                    color: #EEEEEE;
+                    margin: 5px;
+                    color: #EEEEEE;
+                    box-shadow: 5px 5px #31363F;
+                }
+                .test-series{
+                    margin: 5px;
+                    color: #EEEEEE;
+                    background-color: #222831;
+                    box-shadow: 5px 5px #76ABAE;
+                    overflow-x: auto;
+                    max-height: 300px;
+
+                    ul{
+                        .tests{
+                            li{
+                                margin: 2px;
+                                border-top:1px solid #EEEEEE;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                }
+            }
+            .col{
+                .student-list-heading{
+                    margin: 5px;
+                    color: #EEEEEE;
+                    background-color: #75EBAE;
+                    box-shadow: 5px 5px #31363F;
+                }
+                .student-list{
+                    margin: 5px;
+                    color: #EEEEEE;
+                    background-color: #222831;
+                    box-shadow: 5px 5px #76ABAE;
+                    overflow-x: auto;
+                    max-height: 250px;
+                }
+                .add-student{
+                    margin: 5px;
+                    color: #EEEEEE;
+                    background-color: #75EBAE;
+                    box-shadow: 5px 5px #31363F;
+                    .form-card{
+                        .row{
+                            .sub-btn{
+                                background-color: peru;
+                                color: #EEEEEE;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

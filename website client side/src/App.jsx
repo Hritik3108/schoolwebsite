@@ -5,6 +5,7 @@ import {Route,Routes} from 'react-router-dom'
 import ChangePassword from './components/changePassword';
 import Home from './components/home';
 import NavBar from './components/sidebar';
+import Attendence from './components/attendence';
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" element={<LoginForm />} />
         <Route path='/changePassword' element={<ChangePassword />} />
         <Route path='/home' element={<Home />} />
+        <Route path='/attendence' element={<Attendence />} />
       </Routes>
       
 

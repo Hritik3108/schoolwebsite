@@ -1,0 +1,30 @@
+Parent dashboard
+account details 
+name
+contact number
+address
+email
+
+their ward details
+number of children
+1. name   std   academic-record
+
+school/uni/college carousel card-------------------------> school popup
+image								pictures for carousel
+name								motto
+rating								detail/description about school/college/uni
+location 							leading staff pic(principle/director/chairman)
+								achievement/award/certificates
+								fee-structure
+								google map location
+
+contact us form
+name 
+email
+phone number
+subject
+message
+
+
+Notice-board/headline
+for parent/student/staff

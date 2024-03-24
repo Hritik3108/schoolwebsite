@@ -1,8 +1,10 @@
 import React, { useState} from 'react';
 import './index.scss';
 // import NavBar from '../sidebar';
-import UserData from '../userData';
+// import UserData from '../userData';
 import Student from '../student';
+import Staff from '../staff';
+import Parent from '../parent';
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('tab4');
@@ -38,31 +40,16 @@ const Home = () => {
           </div>}
         {activeTab === 'tab2' && 
           <div className='tab-2-div'>
-            <UserData />
+            {/* <UserData /> */}
+            <Staff />
           </div>}
         {activeTab === 'tab3' && 
         <div className='tab-3-div'>
-          Content for Parent
+          <Parent />
         </div>}
         {activeTab === 'tab4' && 
         <div className='tab-4-div'>
-          {/* <select 
-            className='inputbox'
-            name='category' 
-            value={institution.category} 
-            onChange={handleChange} 
-            required
-            >
-            <option className='options' value="">Category</option>  
-            <option className='options' value="Play Group">Play Group</option>
-            <option className='options' value="Day Care">Day Care</option>
-            <option className='options' value="School">School</option>
-            <option className='options' value="College">College</option>
-            <option className='options' value="University">University</option>
-          </select>           */}
           <Student />
-
-
         </div>}
       </div>
     </div>

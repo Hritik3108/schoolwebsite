@@ -1,0 +1,32 @@
+.parent-container{
+    .screen-title{
+        color: black;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .parent-inner-container{
+        .parent-detail-row{
+            .account-info{
+                margin: 5px;
+                color: #EDEDED;
+                background-color: #DA0037;
+                box-shadow: 5px 5px #444444;
+                font-size: 20px;
+
+                .span-data{
+                    font-weight: bolder;
+                    color: #171717;
+                }
+                .span-value{
+                    
+                }
+
+            }
+            .headline col{
+
+            }
+        }
+        
+    }
+}

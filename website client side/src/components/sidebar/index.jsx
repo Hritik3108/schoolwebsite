@@ -34,7 +34,7 @@ const NavBar = () => {
                 <li>Answer Sheet</li>
                 <li>Query</li>
                 <li>Reviews</li>
-                <li>Attendance Sheet</li>
+                <li><a href="/attendence">Attendance Sheet</a></li>
                 <li>Salary Records</li>
                 <li>Yearly Holiday</li>
                 </ul>

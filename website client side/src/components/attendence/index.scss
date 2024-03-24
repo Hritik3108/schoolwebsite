@@ -1,0 +1,38 @@
+.attendence-container{
+    margin-left: 50px;
+    color: black;
+
+    .container-fluid{
+        .row{
+            .col{
+                h1{}
+
+                .attendence-btn{
+                    .attend-btn{
+                    } 
+                }
+                }    
+            }
+
+        .row{
+           
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .attendence-container{
+      margin-left: 41vh;
+    
+      .container-fluid{
+        h1{
+
+        }
+
+        .row{
+            margin-top: 2px;
+        }
+    }
+    
+    }
+}      

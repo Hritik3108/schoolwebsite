@@ -93,7 +93,6 @@ const Student = () => {
                             <div className='row'>
                                 <div className='live-lecture-container'>
                                     <h4>Today ({currentDate.getDate()+" "+monthName+", "+currentDate.getFullYear()}) <span className='session-span'></span></h4>
-                                    {/* <img src='#' alt='session-img' className='sessions-img'/> */}
                                     <FontAwesomeIcon icon={faBroadcastTower} className='session-icon'/>
                                     <p>No sessions scheduled for today yet</p>
                                 </div>
