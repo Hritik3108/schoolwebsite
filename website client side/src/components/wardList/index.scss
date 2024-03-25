@@ -1,0 +1,37 @@
+.wardList-Container{
+    margin: 5px;
+    box-shadow: 5px 5px 10px 1px #31363F;
+    .heading-row{
+        h2{
+            text-align: center;
+            background-color: #DA0037;
+            color: white;
+        }
+    }
+    ul{
+        padding: 0px;
+        margin: 0px;
+        li{
+            list-style: none;
+            padding: 2px;
+            margin: 0px;
+            .list-row{
+                background-color: #EDEDED;
+                max-height: 300px;
+                overflow-y: scroll;
+                
+                .data-col{
+                    .span-head{
+        
+                    }
+                }
+                .value-col{
+                    .span-data{
+        
+                    }
+                }
+            }
+        }
+    }
+    
+}

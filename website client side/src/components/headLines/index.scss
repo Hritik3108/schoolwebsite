@@ -1,0 +1,23 @@
+.HeadLines-Container{
+    margin: 5px;
+    box-shadow: 5px 5px 10px 1px #31363F;
+
+    .heading-row{
+        h2{
+            text-align: center;
+            background-color: #DA0037;
+            color: #444444;
+        }
+    }
+    .headline-row{
+        background-color: #EDEDED;
+        max-height: 100px;
+        overflow-y: scroll;
+        
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+    }
+}

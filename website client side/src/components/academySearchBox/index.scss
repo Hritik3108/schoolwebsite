@@ -1,0 +1,15 @@
+.academySearchBox-Container{
+    margin: 5px;
+    box-shadow: 5px 5px 10px 1px #31363F;
+    background-color: #444444;
+    .heading-row{
+        h2{
+            text-align: center;
+            background-color: #DA0037;
+            color: white;
+        }
+    }
+    .cardList-container{
+        overflow-x:scroll;
+    }
+}
