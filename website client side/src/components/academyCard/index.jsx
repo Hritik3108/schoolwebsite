@@ -1,6 +1,12 @@
 import './index.scss'
 
 const AcademyCard = (props) => {
+    const stars = () => {
+        for(let i=0;i<props.rating;i++){
+            
+        }
+    }
+
     return (
         <div className='academyCard-container'>
             <img src={props.pic} 

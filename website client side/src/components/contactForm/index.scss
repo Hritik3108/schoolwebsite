@@ -18,3 +18,24 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .contactForm-container{
+        .contact-heading-row{
+            h2{
+
+            }
+        }
+        .contactForm-row{
+            .contact-image-col{
+                
+                .contact-image{
+                    width: 300px;
+                }
+            }
+            .form-col{
+    
+            }
+        }
+    }
+}
