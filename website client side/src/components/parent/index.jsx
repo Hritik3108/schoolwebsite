@@ -4,9 +4,12 @@ import HeadLine from '../headLines'
 import WardList from '../wardList'
 import AcademySearchBox from '../academySearchBox'
 import ContactForm from '../contactForm'
+import AcademyPopup from '../academyPopup';
 
 const Parent = () => {
     const [parentdataLive,setParentDataLive]=useState(0);
+    
+
     return (
         <div className='parent-container'>
             
@@ -32,6 +35,7 @@ const Parent = () => {
                     <div className="row search-box-row">
                         {/* search box component */}
                         <AcademySearchBox />
+            
                     </div>
                     <div className="contact-us-row">
                         {/* contact component */}

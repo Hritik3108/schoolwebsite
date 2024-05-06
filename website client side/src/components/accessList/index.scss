@@ -1,0 +1,25 @@
+.container{
+    
+    .row{
+        ul{
+            li{
+                .ls-col{
+
+                }
+            }
+        }
+
+        form{
+            .form-control{
+
+            }
+            .submit-btn{
+                margin-top: 5px;
+                background-color: skyblue;
+                color: white;
+                border: none;
+                box-shadow: 5px 5px gainsboro;
+            }
+        }
+    }
+}

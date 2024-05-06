@@ -41,11 +41,8 @@ body, html {
   //  contents   
   .tab-content{
     .tab-1-div{
-      background-color: red;
-      display: flex;
-      justify-content: center;
-      // align-items: center;
-      height: 90vh;
+      height: 100%;
+      width: 100%;
     }
 
     .tab-2-div{
@@ -98,7 +95,7 @@ body, html {
     //  contents   
     .tab-content{
       .tab-1-div{
-        height: 100vh;
+        height: 100%;
       }
   
       .tab-2-div{

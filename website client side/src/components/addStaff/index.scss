@@ -1,0 +1,48 @@
+.addStudent{
+    .outer-row{
+        .outer-col{
+            .student-list-heading{
+                color: goldenrod;
+                box-shadow: 5px 5px #76ABAE;
+                background-color: #333333;
+                margin: 5px;
+            }
+            .student-list{
+                ul{
+                    li{
+                        font-size: larger;
+                        margin-top: 2px;    
+                        padding: 2px;
+                        border-bottom: 2px solid chocolate;
+                        div{
+
+                        }
+                        button{
+
+                        }
+                    }
+                }
+            }
+
+            .add-student{
+                .form-card{
+                    form{
+                        .form-inner-row{
+                            .input-row{
+                                input{
+
+                                }
+                            }
+                            .sub-row{
+                                button{
+                                    background-color: black;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

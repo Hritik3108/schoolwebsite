@@ -5,6 +5,7 @@ import './index.scss';
 import Student from '../student';
 import Staff from '../staff';
 import Parent from '../parent';
+import Admin from '../admin';
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('tab4');
@@ -36,7 +37,7 @@ const Home = () => {
       <div className="tab-content">
         {activeTab === 'tab1' && 
           <div className='tab-1-div'>
-            Content for Admin
+            <Admin />
           </div>}
         {activeTab === 'tab2' && 
           <div className='tab-2-div'>

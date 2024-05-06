@@ -1,0 +1,26 @@
+.admin-page{
+    text-align: center;
+    background-color: beige;
+    .desciption-row{}
+        .list-row{
+            .col{
+                h4{
+                    color: goldenrod;
+                    box-shadow: 5px 5px #76ABAE;
+                    background-color: #333333;
+                    margin: 5px;
+                    padding: 5px;
+                }
+                }
+            }
+
+    .studentList-row{
+        .col{
+            h4{}
+            }
+        }    
+        
+    .schoolList-row{
+        h4{}
+    }
+}

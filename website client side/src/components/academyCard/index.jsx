@@ -1,4 +1,6 @@
 import './index.scss'
+import AcademyPopup from '../academyPopup';
+import { useState } from 'react';
 
 const AcademyCard = (props) => {
     const stars = () => {
@@ -7,6 +9,14 @@ const AcademyCard = (props) => {
         }
     }
 
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const handleOpenPopup = () => {
+        setIsPopupOpen(true);
+    };
+    const handleClosePopup = () => {
+        setIsPopupOpen(false);
+    };
+
     return (
         <div className='academyCard-container'>
             <img src={props.pic} 
@@ -14,7 +24,8 @@ const AcademyCard = (props) => {
             <h5>{props.name}</h5>
             <p>Location: {props.location}</p>
             <p>Rating:{props.rating} star</p>
-           <button className='btn btn-warning'>Details</button>        
+           <button className='btn btn-warning' onClick={handleOpenPopup}>Details</button>    
+            <AcademyPopup isOpen={isPopupOpen} onClose={handleClosePopup} />
         </div>
     )
 }
